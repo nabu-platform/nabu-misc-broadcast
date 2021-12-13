@@ -1,0 +1,10 @@
+<structure name="pipeline">
+    <structure name="input">
+        <field name="subscriptionId" type="java.lang.String"/>
+        <field name="typeId" type="java.lang.String"/>
+        <structure comment="The data that you subscribed on" definition="java.lang.Object" name="data"/>
+    </structure>
+    <structure name="output">
+        <field comment="Must explicitly indicate that the subscriber is still interested after this." name="active" type="java.lang.Boolean"/>
+    </structure>
+</structure>
